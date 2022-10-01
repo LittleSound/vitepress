@@ -1,28 +1,32 @@
-# VitePress (alpha) 📝💨
+# Vitepress Collapsible Sidebar (alpha) 📝💨
 
-[![Test](https://github.com/vuejs/vitepress/workflows/Test/badge.svg)](https://github.com/vuejs/vitepress/actions)
-[![npm](https://img.shields.io/npm/v/vitepress)](https://www.npmjs.com/package/vitepress)
+add support for collapsible multi-level sidebar
 
----
+> This is the function of PR [#1360](https://github.com/vuejs/vitepress/issues/1360)
 
-VitePress is [VuePress](https://vuepress.vuejs.org)' spiritual successor, built on top of [vite](https://github.com/vitejs/vite).
+## Use
 
-Currently, it's in the `alpha` stage. It is already suitable for out-of-the-box documentation use, but the config and theming API may still change between minor releases.
+> .vitepress/theme/index.ts
 
-## Documentation
+```ts
+import Theme from 'vitepress-collapsible-sidebar/theme'
 
-To check out docs, visit [vitepress.vuejs.org](https://vitepress.vuejs.org).
+export default {
+  ...Theme,
+}
+```
 
-## Changelog
+## Demo
 
-Detailed changes for each release are documented in the [CHANGELOG](https://github.com/vuejs/vitepress/blob/main/CHANGELOG.md).
+collapsed
 
-## Contribution
+![collapsed](https://user-images.githubusercontent.com/19204772/190911974-b25d7e93-6b47-4062-98ae-23cfa303229e.png)
 
-Please make sure to read the [Contributing Guide](https://github.com/vuejs/vitepress/blob/main/.github/contributing.md) before making a pull request.
+expand
 
-## License
+![expand](https://user-images.githubusercontent.com/19204772/190912002-bffe8eb3-7f6a-47ae-9289-42cfad958bac.png)
 
-[MIT](https://github.com/vuejs/vitepress/blob/main/LICENSE)
+## Description
 
-Copyright (c) 2019-present, Yuxi (Evan) You
+- When this node is both a page and a parent node, a split line will be added between the collapse button and the link to distinguish the functional area.
+- If there are no links to jump to, switch to expand when clicking on the text
