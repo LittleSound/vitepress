@@ -9,7 +9,7 @@ add support for collapsible multi-level sidebar
 > package.json
 
 ```ts
-  "vitepress": "npm:vitepress-collapsible-sidebar@1.0.0-alpha.17.8",
+  "vitepress": "npm:vitepress-collapsible-sidebar@1.0.0-alpha.17.9",
 ```
 
 ## Demo
