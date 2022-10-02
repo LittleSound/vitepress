@@ -6,14 +6,10 @@ add support for collapsible multi-level sidebar
 
 ## Use
 
-> .vitepress/theme/index.ts
+> package.json
 
 ```ts
-import Theme from 'vitepress-collapsible-sidebar/theme'
-
-export default {
-  ...Theme,
-}
+  "vitepress": "npm:vitepress-collapsible-sidebar@1.0.0-alpha.17.8",
 ```
 
 ## Demo
