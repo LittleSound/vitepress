@@ -9,10 +9,12 @@ add support for collapsible multi-level sidebar
 > package.json
 
 ```ts
-  "vitepress": "npm:vitepress-collapsible-sidebar@1.0.0-alpha.17.9",
+  "vitepress": "npm:vitepress-collapsible-sidebar@1.0.0-alpha.29",
 ```
 
 ## Demo
+
+I'm using this feature in my knowledge base site, if you want you can go see the results: [Nólëbase](https://nolebase.ayaka.io/)
 
 collapsed
 
@@ -26,3 +28,4 @@ expand
 
 - When this node is both a page and a parent node, a split line will be added between the collapse button and the link to distinguish the functional area.
 - If there are no links to jump to, switch to expand when clicking on the text
+- Auto-expand active routes
